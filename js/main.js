@@ -13,8 +13,16 @@ $(document).ready(function(){
     }).done(function(user){
         console.log(user)
         $('#profile').html(`
-          ${user.name}
+          <div class="panel panel-default">
+            <div class="panel-heading">
+            <h3 class="panel-title">${user.name}</h3>
+            </div>
+            <div class="panel-body">
+            Panel content
+            </div>
+            </div>
+
         `);
       });
     });
-  }); 
+  });
