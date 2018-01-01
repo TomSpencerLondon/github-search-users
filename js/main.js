@@ -12,5 +12,9 @@ $(document).ready(function(){
       }
     }).done(function(user){
         console.log(user)
+        $('#profile').html(`
+          ${user.name}
+        `);
       });
-});
+    });
+  }); 
